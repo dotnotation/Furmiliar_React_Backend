@@ -21,7 +21,7 @@ class ToysController < ApplicationController
 
   # PATCH/PUT /toys/1
   def update
-    if @toy.update!(toy_params)
+    @toy.update!(toy_params)
     render json: @toy
   end
 
