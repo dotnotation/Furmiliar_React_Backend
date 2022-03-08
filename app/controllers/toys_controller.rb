@@ -28,6 +28,7 @@ class ToysController < ApplicationController
   # DELETE /toys/1
   def destroy
     @toy.destroy
+    render json: @toy.id
   end
 
   private
